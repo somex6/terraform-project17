@@ -2,6 +2,7 @@
 yum install -y nginx
 systemctl start nginx
 systemctl enable nginx
+touch healthstatus
 git clone https://github.com/Livingstone95/ACS-project-config.git
 mv /ACS-project-config/reverse.conf /etc/nginx/
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf-distro
